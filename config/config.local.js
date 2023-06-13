@@ -61,6 +61,6 @@ module.exports = (appInfo) => {
     logger: {
       dir: path.join(appInfo.baseDir, 'logs'),
     },
-    server_path: 'http://127.0.0.1:10003',
+    server_path: 'http://127.0.0.1:80',
   };
 };

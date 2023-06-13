@@ -11,7 +11,7 @@
     "egg-doras-middlestage": "^1.0.0",
     "egg-doras-uploadfile": "^1.0.7",
     "egg-doras-validate": "^1.0.1",
-    "egg-scripts": "^2.11.0",
+    "egg-scripts": "^2.17.0",
     "egg-sequelize": "^5.2.2",
     "egg-socket.io": "^4.1.6",
     "egg-view-nunjucks": "^2.2.0",
@@ -68,7 +68,8 @@
     "makeAdminScaffoldPro": "node ./build/renderPro --type adminScaffold",
     "makeGitHubPro": "node ./build/renderPro --type github",
     "start": "cross-env NODE_ENV=production && egg-scripts start --daemon --title=doracms-sql --sticky",
-    "stop": "egg-scripts stop --title=doracms-sql"
+    "stop": "egg-scripts stop --title=doracms-sql",
+    "build":"cross-env NODE_ENV=development && egg-bin dev --sticky"
   },
   "ci": {
     "version": "8, 9"
